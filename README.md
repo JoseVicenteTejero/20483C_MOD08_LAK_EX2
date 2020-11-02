@@ -28,6 +28,8 @@ Task 1.- Add an OData Connected Service for the WCF Data Service to the GradesPr
 </service>
 
 Task 2: Modify the code that accesses the EDM to use the WCF Data Service
+Task 3: Modify the code that saves changes back to the database to use the WCF Data Service
+Task 4: Build and test the application to verify that the application still functions correctly
 
 
 
