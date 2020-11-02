@@ -86,6 +86,7 @@
     <Compile Include="Controls\StudentDialog.xaml.cs">
       <DependentUpon>StudentDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="customGrade.cs" />
     <Compile Include="DataModel\Classes.cs" />
     <Compile Include="DataModel\customTeacher.cs" />
     <Compile Include="Services\SessionContext.cs" />

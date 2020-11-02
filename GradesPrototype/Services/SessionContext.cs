@@ -13,7 +13,8 @@ namespace GradesPrototype.Services
     public class SessionContext
     {
         // TODO: Exercise 2: Task 2a: Specify the URL of the GradesWebDataService
-        public static Grades.DataModel.SchoolGradesDBEntities DBContext = new SchoolGradesDBEntities();
+        
+        public static SchoolGradesDBEntities DBContext = new SchoolGradesDBEntities(new Uri("http://localhost:1655/Services/GradesWebDataService.svc"));
 
         public static Guid UserID;
         public static string UserName;
@@ -25,5 +26,10 @@ namespace GradesPrototype.Services
         {
             DBContext.SaveChanges();
         }
+        static SessionContext()
+        {
+            DBContext.MergeOption = System.Data.Services.Client.MergeOption.PreserveChanges;
+        }
+
     }
 }

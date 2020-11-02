@@ -47,8 +47,7 @@ namespace GradesPrototype.Controls
             {
                 Grades.DataModel.Grade testGrade = new Grades.DataModel.Grade();
 
-                testGrade.ValidateAssessmentDate(assessmentDate.SelectedDate.Value);
-
+                object p = testGrade.ValidateAssessmentDate(assessmentDate.SelectedDate.Value);
                 testGrade.ValidateAssessmentGrade(assessmentGrade.Text);
             }
             catch (Exception ex)
